@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>YouTube Helper</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+      <!-- Left view-->
+      <div class="view view-left navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">Меню</div>
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index-left" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Инструменты</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="generator.html" data-view=".view-main" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Генератор идей</div>
+                        </div>
+                      </div></a></li>
+                  <!-- <li><a href="rulet.html" data-view=".view-main" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Рулетка идей</div>
+                        </div>
+                      </div></a></li> -->
+                  <li><a href="hipe.html" data-view=".view-main" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Инфоповоды</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="help.html" data-view=".view-main" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Инструкция</div>
+                        </div>
+                      </div></a></li>
+                  <!-- <li><a href="#" data-view=".view-main" class="back item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Back in history</div>
+                        </div>
+                      </div></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-reveal">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Right view, it is main view-->
+      <div class="view view-main navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">YouTube Helper</div>
+            <div class="right"><a href="#" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+          </div>
+        </div>
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index-1" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <p class="m10"><a href="help.html" class="button button-fill" >Инструкция</a></p>
+              <div class="content-block">
+                <div class="content-block-inner">Это приложение поможет вам в создании ваших видео. Оно постоянно развивается, улучшается, ухудшается, но мы хотим помочь вам как можно больше в создании ваших видео! Обязательно прочитайте инструкцию!</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
